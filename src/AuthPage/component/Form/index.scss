@@ -1,0 +1,31 @@
+input {
+  display: block;
+  width: 369px;
+  height: 48px;
+  padding: 5px 10px;
+  background: transparent;
+  border-radius: 25px;
+  border: none;
+  margin-bottom: 15px;
+  outline: none !important;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  // &:focus {
+  //   background-color: white;
+  // }
+}
+
+button {
+  width: 151px;
+  height: 48px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  outline: none !important;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
