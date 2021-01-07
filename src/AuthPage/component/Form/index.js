@@ -2,6 +2,7 @@ import React from "react";
 import { ReactComponent as Success } from "./assets/success.svg";
 import { ReactComponent as Alert } from "./assets/alert.svg";
 import NumberFormat from "react-number-format";
+import ToggleSwitch from "./SwitchButton/index";
 import "./index.scss";
 
 class Form extends React.Component {
@@ -10,18 +11,12 @@ class Form extends React.Component {
 
     this.state = {
       fields: {
-        firstName: "",
-        email: "",
         password: "",
-        confirmPassword: "",
         mobile: "",
       },
       errors: {
-        firstName: "",
-        email: "",
         password: "",
         mobile: "",
-        confirmPassword: "",
       },
     };
   }
@@ -29,45 +24,44 @@ class Form extends React.Component {
   validate = (name, value) => {
     switch (name) {
       case "mobile":
-        console.log(value.length);
-        if (value.length > 17 || value.length === 0) {
+        if (value.length !== 19) {
           return (
-            <label style={{ position: "absolute", right: "10px", top: "20px" }}>
+            <label
+              className="formAuth__labelStyle"
+              style={{
+                position: "absolute",
+                right: "5px",
+                top: "15px",
+              }}
+            >
               <Alert />
             </label>
           );
-        } else {
-          return (
-            <label style={{ position: "absolute", right: "10px", top: "20px" }}>
-              <Success />
-            </label>
-          );
         }
+        return (
+          <label
+            className="formAuth__labelStyle"
+            style={{
+              position: "absolute",
+              right: "5px",
+              top: "20px",
+            }}
+          >
+            <Success />
+          </label>
+        );
 
       case "password":
-        if (!value) {
-          return "Password is Required";
-        } else if (value.length < 8 || value.length > 15) {
-          return "Please fill at least 8 character";
-        } else if (!value.match(/[a-z]/g)) {
-          return "Please enter at least lower character.";
-        } else if (!value.match(/[A-Z]/g)) {
-          return "Please enter at least upper character.";
-        } else if (!value.match(/[0-9]/g)) {
-          return "Please enter at least one digit.";
-        } else {
-          return "";
+        if (value.length < 5) {
+          return "Введите не менее 5 символов";
         }
+        return "";
 
       default: {
         return "";
       }
     }
   };
-  setMask(event) {
-    let mask = this.state.maskValues[event.target.type];
-    this.setState({ mask });
-  }
 
   handleUserInput = (e) => {
     this.setState({
@@ -84,7 +78,6 @@ class Form extends React.Component {
 
   handleSubmit = (e) => {
     const { fields } = this.state;
-
     e.preventDefault();
     let validationErrors = {};
     Object.keys(fields).forEach((name) => {
@@ -102,79 +95,87 @@ class Form extends React.Component {
         password: fields.password,
         mobile: fields.mobile,
       };
-      window.alert("subit success", JSON.stringify(data));
-      console.log("----data----", data);
+
+      window.alert("submit success", JSON.stringify(data));
+
+      this.setState({
+        fields: {
+          password: "",
+          mobile: "",
+        },
+      });
     }
   };
 
   render() {
-    // const success = "/success.svg";
-    // const alert = "/alert.svg";
     const { fields, errors } = this.state;
-    const mask = this.state.mask;
+
     return (
-      <div>
-        <div className="border">
-          <div>
-            <div>
-              <NumberFormat
-                name="mobile"
-                // allowEmptyFormatting
-                mask=" _ "
-                autocomplete="off"
-                format="+7 (###) ###-####"
-                autoFocus={errors.mobile}
-                value={fields.mobile}
-                onChange={(event) => this.handleUserInput(event)}
-                placeholder="mobile"
-                style={
-                  fields.mobile.length > 17 && fields.mobile.length > 0
-                    ? {
-                        color: "red",
-                        backgroundColor: "white",
-                      }
-                    : {
-                        color: "white",
-                      }
-                }
-              />
-              {errors.mobile}
-            </div>
+      <>
+        <form className="formAuth" onSubmit={this.handleSubmit}>
+          <NumberFormat
+            className={
+              fields.mobile.length !== 19
+                ? "formAuth__inputStyle formAuth__inputStyle--active"
+                : "formAuth__inputStyle"
+            }
+            name="mobile"
+            type="tel"
+            mask=" . "
+            autoComplete="off"
+            format="8 ( ### ) ###-##-##"
+            value={fields.mobile}
+            onChange={(event) => this.handleUserInput(event)}
+            placeholder="Номер телефона"
+            required
+            style={
+              fields.mobile.length !== 19 && fields.mobile.length !== 0
+                ? {
+                    color: "#B40000",
+                  }
+                : {
+                    color: "white",
+                  }
+            }
+          />
+          {errors.mobile}
+          <input
+            className={
+              errors.password
+                ? "formAuth__inputStyle formAuth__inputStyle--active"
+                : "formAuth__inputStyle"
+            }
+            type="password"
+            autoComplete="off"
+            name="password"
+            value={fields.password}
+            onChange={(event) => this.handleUserInput(event)}
+            placeholder="Пароль"
+            required
+            style={errors.password ? { color: "black" } : { color: "white" }}
+          />
+          <div className="formAuth__errorsText">{errors.password}</div>
+          <div className="formAuth__toggle formAuth__forgotPassword">
+            <ToggleSwitch />
+            <a href="https://www.apple.com/">Забыл пароль</a>
           </div>
-          <div>
-            <label>Password:</label>
-            <input
-              type="Password"
-              autocomplete="off"
-              name="password"
-              value={fields.password}
-              onChange={(event) => this.handleUserInput(event)}
-              placeholder="Password"
-              style={
-                errors.password
-                  ? { backgroundColor: "white" }
-                  : { backgroundColor: "transparent" }
-              }
-            />
-            <div>
-              <span className="text-danger">{errors.password}</span>
-            </div>
-          </div>
-        </div>
-        <br />
-        <button
-          type="button"
-          className="login-button pointer"
-          onClick={this.handleSubmit}
-          disabled={
-            fields.password.length === 0 ||
-            (errors.password && fields.mobile.length >= 0) ||
-            (fields.password.length > 0 && fields.mobile.length < 10)
-          }
-        >
-          Submit
-        </button>
-      </div>
+
+          <button
+            className="formAuth__buttonStyle"
+            onClick={this.handleSubmit}
+            type="submit"
+            disabled={
+              fields.password.length === 0 ||
+              fields.password.length < 5 ||
+              fields.mobile.length > 19 ||
+              (errors.password && fields.mobile.length === 0) ||
+              (fields.password.length > 0 && fields.mobile.length === 0)
+            }
+          >
+            ВОЙТИ
+          </button>
+        </form>
+      </>
     );
   }
 }

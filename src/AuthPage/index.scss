@@ -9,7 +9,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   color: rgba(255, 255, 255, 1);
 
   &::after {
@@ -23,18 +22,18 @@
     z-index: 2;
   }
 
-  .formContainer {
+  &__formContainer {
     position: relative;
-    padding: 25px;
-    width: 626px;
+    padding: 2rem;
+    width: 39rem;
     outline: none !important;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: inherit;
-    backdrop-filter: blur(5px);
     z-index: 3;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 
     &::before {
       content: "";
@@ -43,37 +42,23 @@
       left: 0;
       bottom: 0;
       right: 0;
+      filter: blur(4px);
       background: inherit;
-      filter: blur(5px);
     }
 
     header {
       align-self: flex-start;
       position: relative;
-      font-size: 10px;
+      font-size: 0.7rem;
       letter-spacing: 0.8px;
       display: flex;
       align-items: center;
       z-index: 3;
       p {
         opacity: 0.6;
-        margin-left: 6px;
+        margin-left: 0.3rem;
+        text-transform: uppercase;
       }
     }
   }
 }
-
-// @media (prefers-reduced-motion: no-preference) {
-//   .App-logo {
-//     animation: App-logo-spin infinite 20s linear;
-//   }
-// }
-
-// @keyframes App-logo-spin {
-//   from {
-//     transform: rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(360deg);
-//   }
-// }
