@@ -31,19 +31,27 @@
     outline: none !important;
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.4);
-    color: white;
     font-size: 1rem;
     display: flex;
     justify-content: center;
     text-align: center;
     cursor: pointer;
+    color: white;
 
-    &:nth-child(1) {
-      margin-bottom: 1rem;
+    &::placeholder {
+      color: grey;
     }
-
+    &:invalid {
+      box-shadow: none;
+    }
     &--active {
       background-color: white;
+    }
+    input::-ms-clear {
+      display: none;
+    }
+    &:nth-child(1) {
+      margin-bottom: 1rem;
     }
   }
 

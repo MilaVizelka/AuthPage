@@ -134,7 +134,7 @@ class Form extends React.Component {
                     color: "#B40000",
                   }
                 : {
-                    color: "white",
+                    color: "",
                   }
             }
           />
@@ -152,7 +152,7 @@ class Form extends React.Component {
             onChange={(event) => this.handleUserInput(event)}
             placeholder="Пароль"
             required
-            style={errors.password ? { color: "black" } : { color: "white" }}
+            style={errors.password ? { color: "black" } : { color: "" }}
           />
           <div className="formAuth__errorsText">{errors.password}</div>
           <div className="formAuth__toggle formAuth__forgotPassword">
