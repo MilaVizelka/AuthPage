@@ -20,6 +20,7 @@ function App() {
         <filter id="blur">
           <feGaussianBlur stdDeviation="15"></feGaussianBlur>
         </filter>
+        <image filter="url(#blur)"></image>
       </svg>
     </>
   );
