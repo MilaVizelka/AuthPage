@@ -1,7 +1,7 @@
-import "./index.scss";
-import React, { Suspense } from "react";
+import React from "react";
 import NumberFormat from "react-number-format";
-const ToggleSwitch = React.lazy(() => import("./SwitchButton/index"));
+import ToggleSwitch from "./SwitchButton/index";
+import "./index.scss";
 
 class Form extends React.Component {
   constructor(props) {
@@ -162,9 +162,7 @@ class Form extends React.Component {
           />
           <div className="formAuth__errorsText">{errors.password}</div>
           <div className="formAuth__toggle formAuth__forgotPassword">
-            <Suspense fallback={<div>Loading...</div>}>
-              <ToggleSwitch />
-            </Suspense>
+            <ToggleSwitch />
             <a href="https://www.apple.com/">Забыл пароль</a>
           </div>
 

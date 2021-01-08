@@ -1,6 +1,5 @@
+import Form from "./component/Form/index";
 import "./index.scss";
-import React, { Suspense } from "react";
-const Form = React.lazy(() => import("./component/Form/index"));
 
 function App() {
   return (
@@ -22,9 +21,7 @@ function App() {
             alt="logo"
             style={{ zIndex: "4" }}
           />
-          <Suspense fallback={<div>Loading...</div>}>
-            <Form />
-          </Suspense>
+          <Form />
         </div>
       </section>
 
