@@ -1,32 +1,22 @@
 {
   "files": {
-    "main.css": "/AuthPage/static/css/main.d81f9527.chunk.css",
-    "main.js": "/AuthPage/static/js/main.90a16fcd.chunk.js",
-    "main.js.map": "/AuthPage/static/js/main.90a16fcd.chunk.js.map",
-    "runtime-main.js": "/AuthPage/static/js/runtime-main.7d12e094.js",
-    "runtime-main.js.map": "/AuthPage/static/js/runtime-main.7d12e094.js.map",
-    "static/js/2.3104dab5.chunk.js": "/AuthPage/static/js/2.3104dab5.chunk.js",
-    "static/js/2.3104dab5.chunk.js.map": "/AuthPage/static/js/2.3104dab5.chunk.js.map",
-    "static/js/3.2ad8e749.chunk.js": "/AuthPage/static/js/3.2ad8e749.chunk.js",
-    "static/js/3.2ad8e749.chunk.js.map": "/AuthPage/static/js/3.2ad8e749.chunk.js.map",
-    "static/css/4.c5ecb03c.chunk.css": "/AuthPage/static/css/4.c5ecb03c.chunk.css",
-    "static/js/4.806b3451.chunk.js": "/AuthPage/static/js/4.806b3451.chunk.js",
-    "static/js/4.806b3451.chunk.js.map": "/AuthPage/static/js/4.806b3451.chunk.js.map",
-    "static/css/5.7fb44131.chunk.css": "/AuthPage/static/css/5.7fb44131.chunk.css",
-    "static/js/5.bf2b9323.chunk.js": "/AuthPage/static/js/5.bf2b9323.chunk.js",
-    "static/js/5.bf2b9323.chunk.js.map": "/AuthPage/static/js/5.bf2b9323.chunk.js.map",
-    "static/js/6.1bfb25f9.chunk.js": "/AuthPage/static/js/6.1bfb25f9.chunk.js",
-    "static/js/6.1bfb25f9.chunk.js.map": "/AuthPage/static/js/6.1bfb25f9.chunk.js.map",
+    "main.css": "/AuthPage/static/css/main.81aa16b0.chunk.css",
+    "main.js": "/AuthPage/static/js/main.e856d53c.chunk.js",
+    "main.js.map": "/AuthPage/static/js/main.e856d53c.chunk.js.map",
+    "runtime-main.js": "/AuthPage/static/js/runtime-main.0ade49ee.js",
+    "runtime-main.js.map": "/AuthPage/static/js/runtime-main.0ade49ee.js.map",
+    "static/js/2.de5110e3.chunk.js": "/AuthPage/static/js/2.de5110e3.chunk.js",
+    "static/js/2.de5110e3.chunk.js.map": "/AuthPage/static/js/2.de5110e3.chunk.js.map",
+    "static/js/3.fca05ab5.chunk.js": "/AuthPage/static/js/3.fca05ab5.chunk.js",
+    "static/js/3.fca05ab5.chunk.js.map": "/AuthPage/static/js/3.fca05ab5.chunk.js.map",
     "index.html": "/AuthPage/index.html",
-    "static/css/4.c5ecb03c.chunk.css.map": "/AuthPage/static/css/4.c5ecb03c.chunk.css.map",
-    "static/css/5.7fb44131.chunk.css.map": "/AuthPage/static/css/5.7fb44131.chunk.css.map",
-    "static/css/main.d81f9527.chunk.css.map": "/AuthPage/static/css/main.d81f9527.chunk.css.map",
-    "static/js/2.3104dab5.chunk.js.LICENSE.txt": "/AuthPage/static/js/2.3104dab5.chunk.js.LICENSE.txt"
+    "static/css/main.81aa16b0.chunk.css.map": "/AuthPage/static/css/main.81aa16b0.chunk.css.map",
+    "static/js/2.de5110e3.chunk.js.LICENSE.txt": "/AuthPage/static/js/2.de5110e3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7d12e094.js",
-    "static/js/2.3104dab5.chunk.js",
-    "static/css/main.d81f9527.chunk.css",
-    "static/js/main.90a16fcd.chunk.js"
+    "static/js/runtime-main.0ade49ee.js",
+    "static/js/2.de5110e3.chunk.js",
+    "static/css/main.81aa16b0.chunk.css",
+    "static/js/main.e856d53c.chunk.js"
   ]
 }
