@@ -1,6 +1,4 @@
 import React from "react";
-import { ReactComponent as Success } from "./assets/success.svg";
-import { ReactComponent as Alert } from "./assets/alert.svg";
 import NumberFormat from "react-number-format";
 import ToggleSwitch from "./SwitchButton/index";
 import "./index.scss";
@@ -34,7 +32,11 @@ class Form extends React.Component {
                 top: "15px",
               }}
             >
-              <Alert />
+              <img
+                src="https://svgshare.com/i/Sx_.svg"
+                title="alert"
+                alt="alert"
+              />
             </label>
           );
         }
@@ -47,7 +49,11 @@ class Form extends React.Component {
               top: "20px",
             }}
           >
-            <Success />
+            <img
+              src="https://svgshare.com/i/Svr.svg"
+              title="success"
+              alt="success"
+            />
           </label>
         );
 

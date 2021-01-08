@@ -1,5 +1,3 @@
-import { ReactComponent as Logo } from "./assets/logo.svg";
-import { ReactComponent as Arrow } from "./assets/arrow.svg";
 import Form from "./component/Form/index";
 import "./index.scss";
 function App() {
@@ -8,10 +6,20 @@ function App() {
       <section className="authPage">
         <div className="authPage__formContainer">
           <header>
-            <Arrow />
+            <img
+              src="https://svgshare.com/i/Sw9.svg"
+              title="arrow"
+              alt="arrow"
+            />
             <p>Вернуться</p>
           </header>
-          <Logo style={{ zIndex: "4" }} />
+
+          <img
+            src="https://svgshare.com/i/Svz.svg"
+            title="logo"
+            alt="logo"
+            style={{ zIndex: "4" }}
+          />
           <Form />
         </div>
       </section>
