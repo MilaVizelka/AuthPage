@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/AuthPage/static/css/main.9a3362df.chunk.css",
-    "main.js": "/AuthPage/static/js/main.7d96bc76.chunk.js",
-    "main.js.map": "/AuthPage/static/js/main.7d96bc76.chunk.js.map",
+    "main.js": "/AuthPage/static/js/main.7341c699.chunk.js",
+    "main.js.map": "/AuthPage/static/js/main.7341c699.chunk.js.map",
     "runtime-main.js": "/AuthPage/static/js/runtime-main.0ade49ee.js",
     "runtime-main.js.map": "/AuthPage/static/js/runtime-main.0ade49ee.js.map",
     "static/js/2.de5110e3.chunk.js": "/AuthPage/static/js/2.de5110e3.chunk.js",
@@ -13,12 +13,12 @@
     "static/css/main.9a3362df.chunk.css.map": "/AuthPage/static/css/main.9a3362df.chunk.css.map",
     "static/js/2.de5110e3.chunk.js.LICENSE.txt": "/AuthPage/static/js/2.de5110e3.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/AuthPage/static/media/background.8f71b930.jpg",
-    "static/media/logo.781fac3b.svg": "/AuthPage/static/media/logo.781fac3b.svg"
+    "static/media/logo.d4c3cb3e.png": "/AuthPage/static/media/logo.d4c3cb3e.png"
   },
   "entrypoints": [
     "static/js/runtime-main.0ade49ee.js",
     "static/js/2.de5110e3.chunk.js",
     "static/css/main.9a3362df.chunk.css",
-    "static/js/main.7d96bc76.chunk.js"
+    "static/js/main.7341c699.chunk.js"
   ]
 }
