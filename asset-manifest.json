@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/AuthPage/static/css/main.c72f9b88.chunk.css",
+    "main.css": "/AuthPage/static/css/main.df8b6c02.chunk.css",
     "main.js": "/AuthPage/static/js/main.7341c699.chunk.js",
     "main.js.map": "/AuthPage/static/js/main.7341c699.chunk.js.map",
     "runtime-main.js": "/AuthPage/static/js/runtime-main.0ade49ee.js",
@@ -10,7 +10,7 @@
     "static/js/3.fca05ab5.chunk.js": "/AuthPage/static/js/3.fca05ab5.chunk.js",
     "static/js/3.fca05ab5.chunk.js.map": "/AuthPage/static/js/3.fca05ab5.chunk.js.map",
     "index.html": "/AuthPage/index.html",
-    "static/css/main.c72f9b88.chunk.css.map": "/AuthPage/static/css/main.c72f9b88.chunk.css.map",
+    "static/css/main.df8b6c02.chunk.css.map": "/AuthPage/static/css/main.df8b6c02.chunk.css.map",
     "static/js/2.de5110e3.chunk.js.LICENSE.txt": "/AuthPage/static/js/2.de5110e3.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/AuthPage/static/media/background.8f71b930.jpg",
     "static/media/logo.d4c3cb3e.png": "/AuthPage/static/media/logo.d4c3cb3e.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.0ade49ee.js",
     "static/js/2.de5110e3.chunk.js",
-    "static/css/main.c72f9b88.chunk.css",
+    "static/css/main.df8b6c02.chunk.css",
     "static/js/main.7341c699.chunk.js"
   ]
 }
