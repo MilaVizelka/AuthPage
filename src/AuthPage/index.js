@@ -1,4 +1,6 @@
 import Form from "./component/Form/index";
+import Logo from "./assets/logo.png";
+
 import "./index.scss";
 
 function App() {
@@ -14,13 +16,7 @@ function App() {
             />
             <p>Вернуться</p>
           </header>
-
-          <img
-            src="https://svgshare.com/i/Svz.svg"
-            title="logo"
-            alt="logo"
-            style={{ zIndex: "4" }}
-          />
+          <img src={Logo} style={{ zIndex: "4" }} alt="logo" />
           <Form />
         </div>
       </section>
@@ -29,7 +25,6 @@ function App() {
         <filter id="blur">
           <feGaussianBlur stdDeviation="15"></feGaussianBlur>
         </filter>
-        <image filter="url(#blur)"></image>
       </svg>
     </>
   );

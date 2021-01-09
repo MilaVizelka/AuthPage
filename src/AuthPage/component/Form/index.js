@@ -33,7 +33,7 @@ class Form extends React.Component {
               }}
             >
               <img
-                src="https://svgshare.com/i/Sx_.svg"
+                src="https://imagesmila.s3.eu-north-1.amazonaws.com/alert.svg"
                 title="alert"
                 alt="alert"
               />
@@ -50,7 +50,7 @@ class Form extends React.Component {
             }}
           >
             <img
-              src="https://svgshare.com/i/Svr.svg"
+              src="https://imagesmila.s3.eu-north-1.amazonaws.com/success.svg"
               title="success"
               alt="success"
             />
